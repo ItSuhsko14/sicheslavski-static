@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from './Home.module.css';
 import Logo from '../public/logo.png'
-import TitlePhoto from '/titlephoto.png'
+import TitlePhoto from '../public/titlephoto.png'
 import { FaFacebook } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import PhotoGallery from './components/photogallery/photogallery';
