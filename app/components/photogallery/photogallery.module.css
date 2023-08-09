@@ -1,8 +1,8 @@
 
 .container {
-    width: 80%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Автоматично масштабувати колонки від 250px до 1fr */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматично масштабувати колонки від 250px до 1fr */
     gap: 20px; /* Відступи між елементами */
     padding-bottom: 1rem;
 }

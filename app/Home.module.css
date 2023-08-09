@@ -22,7 +22,7 @@
 .title {
   margin: 0 0 1rem;
   width: 100%;
-  max-width: 800px;
+
 }
 
 
@@ -35,10 +35,10 @@
 .description {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 100%;
   max-width: 200px;
   font-size: 5vh;
-  margin: 1vh;
+  margin: 0 auto;
 }
 
 .grid {
@@ -46,9 +46,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .card {
@@ -120,4 +118,8 @@
 /* Активні посилання (колір при виборі клавішами) */
 .sociallink:focus {
   color: #007bff; /* Синій колір */
+}
+
+.sect {
+  width: 100%;
 }
