@@ -39,7 +39,7 @@ const photoblok5 = [
 ]
 
 const photoblok6 = [
-  { src: "/img/img16.jpg", ratio: 3/2},
+  { src: "/img/img25.jpg", ratio: 3/2},
   { src: "/img/img17.jpg", ratio: 3/2},
   { src: "/img/img18.jpg", ratio: 3/2},   
 ]
