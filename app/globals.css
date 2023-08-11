@@ -52,7 +52,7 @@ main {
 }
 
 header {
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -86,4 +86,42 @@ code {
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+/* Розмір основного шрифта на екрані до 320пікс */
+@media screen and (max-width: 320px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+/* Розмір основного шрифта на екрані до 920пікс */
+@media screen and (min-width: 320px) {
+	body {
+	/* 
+			font-size = fs1 + (100vw-fs1)*(fs2-fs1)/(b2-b1)
+			fs1 - мінімальний шрифт
+			fs2 - максимальний шрифт
+			b1 - мінімальна ширина екрана, пікс
+			b2 - максимальна ширина екрана, пікс
+
+			fs1=14px fs2=18px b1=320px b2=920px
+			font-size = 14 + (100vw-320)*4/600
+	*/
+	font-size: calc(0.66vw + 11.86px);
+    }
+}
+
+/* Розмір основного шрифта на екрані більше 920пікс */
+@media screen and (min-width: 920px) {
+	body {
+	  font-size: 18px;
+    }
+}
+
+section {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

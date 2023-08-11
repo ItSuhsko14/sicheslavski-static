@@ -2,12 +2,16 @@
 .container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматично масштабувати колонки від 250px до 1fr */
+    grid-template-columns: repeat(4, 1fr); /* Автоматично масштабувати колонки від 250px до 1fr */
     gap: 20px; /* Відступи між елементами */
     padding-bottom: 1rem;
 }
     
-
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Автоматично масштабувати колонки від 250px до 1fr */
+    }
+}
 
 .image {
     width: 100%; /* Зображення займатиме 100% ширини колонки */
